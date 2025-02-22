@@ -2,8 +2,8 @@ const fastifyRateLimit = require("@fastify/rate-limit");
 const fastifyMultipart = require("@fastify/multipart");
 const FileType = require("file-type");
 const stream = require("stream");
-const mega = require("./mega.js");
-const config = require("./config.js");
+const mega = require("../mega.js");
+const config = require("../config.js");
 const fastify = require("fastify")({
   logger: 0,
 });
