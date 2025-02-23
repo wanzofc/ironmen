@@ -76,15 +76,16 @@ fastify.get("/media/*", async (request, reply) => {
   }
 });
 
-async function start() {
+var start = async () => {
   try {
     await mega.initialize();
-    fastify.listen({ port: config.server.port, host: "0.0.0.0" });
+    console.log("Logged IN!");
+    await fastify.listen({ port: config.server.port, host: '0.0.0.0' });
     console.log(`Running at ${config.server.domain}:${config.server.port}`);
-  } catch (error) {
-    fastify.log.error(error);
+  } catch (err) {
+    fastify.log.error(err);
     console.log("EXITING");
     process.exit(1);
   }
-}
+};
 start();
