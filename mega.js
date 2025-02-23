@@ -3,7 +3,6 @@ const mega = require('megajs');
 const fs = require('fs');
 const path = require('path');
 const config = require('./config.js');
-
 class Client {
   constructor() {
     this.lock = new Mutex();
