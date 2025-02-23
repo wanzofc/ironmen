@@ -60,6 +60,7 @@ curl -X POST -F "file=@image.jpg" http://yourdomain.com/upload
 - [ ] Add multiple accounts support
 - [ ] Add an web interface (optional)
 - [ ] Proper logging (error and alerts)
+- [ ] Fetch origin (domain) automatically
 
 ## Contributing  
 1. Fork the repository  
