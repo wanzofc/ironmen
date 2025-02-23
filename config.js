@@ -104,5 +104,5 @@ module.exports = {
     max: 100,
     timeWindow: '1 minute' //100 req per minute change to ur need
   },
-  storage: process.env.TEMP || 'file', // 'file' or 'memory' based on ur needs
+  storage: process.env.TEMP || 'memory', // 'file' or 'memory' based on ur needs
 };
