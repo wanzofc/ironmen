@@ -1,12 +1,12 @@
 module.exports = {
   mega: {
-    email: process.env.EMAIL || 'ironman@onlyfans.com', //mega email
-    password: process.env.PASS || 'Katarenai nemurenai toroimerai', //mega password
+    email: process.env.EMAIL || 'berlianawan498@gmail.com', //mega email
+    password: process.env.PASS || 'olre djtq lzyu oaxg', //mega password
     storagePath: './storage'
   },
   server: {
     port: process.env.PORT || 3000,
-    domain: process.env.DOMAIN || 'https://cdn.ironman.biz.id', //your domain base url
+    domain: process.env.DOMAIN || 'https://cdn.wanzofc-ai.biz.id', //your domain base url
     maxFileSize: 1024 * 1024 * 100, //100 mb
     allowedTypes: [
       'image/jpeg',
