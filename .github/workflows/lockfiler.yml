@@ -1,4 +1,4 @@
-name: lockfiler
+name: lockfilerr
 
 on:
   push:
@@ -18,13 +18,16 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 2
-
+        
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          
+      - name: Git Identity
+        run: git config --local user.name "lockfiler[bot]" && git config --local user.email "lockfiler@users.noreply.github.com"
 
-      - name: Run Lockfiler
+      - name: Lockfiler
         uses: IRON-M4N/lockfiler@v1.0.6
         with:
           package-manager: yarn
